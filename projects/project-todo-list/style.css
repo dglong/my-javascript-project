@@ -6,3 +6,67 @@ body {
   background-color: #282c34;
   color: #c2bebe;
 }
+
+input {
+  height: 8px;
+  padding: 10px;
+  color: #c2bebe;
+  font-size: 1rem;
+  background-color: transparent;
+  /* border-top: none;
+  border-left: none;
+  border-right: none; */
+  border: 1px solid white;
+  outline: none;
+  z-index: 0;
+}
+
+.todo-input::before {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  background: #282c34;
+  content: "123";
+  z-index: 1;
+}
+
+button {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #c2bebe;
+  border: 1px solid #c2bebe;
+  height: 30px;
+  width: 30px;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  margin: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
